@@ -10,7 +10,7 @@ export class PhonebookForm extends Component {
         phone: ""
     }
 
-    propTypes = {
+    static propTypes = {
     onSubmit: PropTypes.func
     }
 

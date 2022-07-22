@@ -12,5 +12,5 @@ Item.propTypes = {
     name: PropTypes.string.isRequired,
     phone: PropTypes.string.isRequired,
     onDelete: PropTypes.func.isRequired,
-    id: PropTypes.string
+    id: PropTypes.string.isRequired
 }

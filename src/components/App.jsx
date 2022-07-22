@@ -4,7 +4,7 @@ import { Section } from "./Section/Section";
 import { nanoid } from 'nanoid'
 import { Contacts } from "./Contacts/Contacts";
 import { FindByName } from "./FindByName/FindByName"
-import PropTypes from "prop-types"
+
 
 
 export class App extends Component {
@@ -15,7 +15,6 @@ export class App extends Component {
     {id: 'id-4', name: 'Annie Copeland', phone: '227-91-26'}],
     filter: ""
   }
-
 
     handlerSubmit = (contact) => { 
       const isHere = this.state.contacts.some(({name}) => name === contact.name)
