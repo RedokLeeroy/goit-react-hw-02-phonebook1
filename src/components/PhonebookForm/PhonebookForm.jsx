@@ -34,8 +34,5 @@ render () {
 }
 
 PhoneInput.propTypes = {
-    name:  PropTypes.string,
-    phone: PropTypes.string,
-    handSubmit: PropTypes.func,
-    handlerInput: PropTypes.func
+    onSubmit: PropTypes.func
 }
