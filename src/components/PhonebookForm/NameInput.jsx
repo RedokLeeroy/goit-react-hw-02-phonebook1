@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 export const NameInput = ({name, value, func}) => {
     return <label>Name<input
   type="text"
@@ -8,4 +9,10 @@ export const NameInput = ({name, value, func}) => {
   title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
   required
 /></label>
+}
+
+NameInput.propTypes = {
+    name:  PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    func: PropTypes.func.isRequired
 }

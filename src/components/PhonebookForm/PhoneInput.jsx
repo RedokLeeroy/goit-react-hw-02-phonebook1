@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 export const PhoneInput = ({name, value ,func}) => {
     return <label>Phone<input
   type="tel"
@@ -9,4 +10,11 @@ export const PhoneInput = ({name, value ,func}) => {
   required
 />
 </label>
+}
+
+
+PhoneInput.propTypes = {
+    name:  PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    func: PropTypes.func.isRequired
 }

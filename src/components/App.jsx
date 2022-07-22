@@ -4,6 +4,7 @@ import { Section } from "./Section/Section";
 import { nanoid } from 'nanoid'
 import { Contacts } from "./Contacts/Contacts";
 import { FindByName } from "./FindByName/FindByName"
+import PropTypes from "prop-types"
 
 
 export class App extends Component {
@@ -13,6 +14,15 @@ export class App extends Component {
     {id: 'id-3', name: 'Eden Clements', phone: '645-17-79'},
     {id: 'id-4', name: 'Annie Copeland', phone: '227-91-26'}],
     filter: ""
+  }
+
+  static propTypes = {
+    handlerSubmit: PropTypes.func,
+    handleChange: PropTypes.func,
+handleFilters: PropTypes.func,
+handleDelete: PropTypes.func,
+filter: PropTypes.string,
+contacts: PropTypes.arrayOf(PropTypes.object)
   }
 
     handlerSubmit = (contact) => { 

@@ -2,6 +2,7 @@ import { Component } from "react";
 import { FormSubmit } from "./FormSubmit";
 import { NameInput } from "./NameInput";
 import { PhoneInput } from "./PhoneInput";
+import PropTypes from "prop-types"
 
 export class PhonebookForm extends Component {
     state = {
@@ -30,4 +31,11 @@ render () {
         </form>
     )
 }
+}
+
+PhoneInput.propTypes = {
+    name:  PropTypes.string,
+    phone: PropTypes.string,
+    handSubmit: PropTypes.func,
+    handlerInput: PropTypes.func
 }
