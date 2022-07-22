@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
+import s from "./Input.module.css"
 export const NameInput = ({name, value, func}) => {
-    return <label>Name<input
+    return <label className={s.label}>Name<input
+  className={s.input}
   type="text"
   name={name}
   value={value}
