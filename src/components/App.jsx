@@ -16,14 +16,6 @@ export class App extends Component {
     filter: ""
   }
 
-  static propTypes = {
-    handlerSubmit: PropTypes.func,
-    handleChange: PropTypes.func,
-handleFilters: PropTypes.func,
-handleDelete: PropTypes.func,
-filter: PropTypes.string,
-contacts: PropTypes.arrayOf(PropTypes.object)
-  }
 
     handlerSubmit = (contact) => { 
       const isHere = this.state.contacts.some(({name}) => name === contact.name)

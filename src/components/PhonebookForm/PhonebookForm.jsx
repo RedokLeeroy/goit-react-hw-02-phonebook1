@@ -9,6 +9,11 @@ export class PhonebookForm extends Component {
         name : "",
         phone: ""
     }
+
+    propTypes = {
+    onSubmit: PropTypes.func
+    }
+
     handlerInput = (event) => {
         const {name, value} = event.target
         return this.setState({[name] : value})
@@ -33,6 +38,3 @@ render () {
 }
 }
 
-PhoneInput.propTypes = {
-    onSubmit: PropTypes.func
-}
